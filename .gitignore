@@ -1,0 +1,14 @@
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Maven
+target/
+release.properties
+pom.xml.releaseBackup
+tree.txt
+analyze.txt
