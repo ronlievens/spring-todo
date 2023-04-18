@@ -1,0 +1,22 @@
+databaseChangeLog:
+  #---------------------------------------------------------------------------------------------------------------------
+  # SCHEMA
+  #---------------------------------------------------------------------------------------------------------------------
+  - include:
+      relativeToChangelogFile: true
+      file: schema/users.sql
+  - include:
+      relativeToChangelogFile: true
+      file: schema/gebruiker_rollen.sql
+  - include:
+      relativeToChangelogFile: true
+      file: schema/gebruiker_tokens.sql
+  #---------------------------------------------------------------------------------------------------------------------
+  # DATA
+  #---------------------------------------------------------------------------------------------------------------------
+  - include:
+      relativeToChangelogFile: true
+      file: data/users.sql
+  - include:
+      relativeToChangelogFile: true
+      file: data/gebruiker_rollen.sql
