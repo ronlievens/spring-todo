@@ -1,0 +1,17 @@
+version: '3'
+
+volumes:
+  data:
+
+services:
+  db:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root_pwd
+      MYSQL_DATABASE: todo_db
+      MYSQL_USER: todo_usr
+      MYSQL_PASSWORD: todo_pwd
+    volumes:
+      - data:/var/lib/mysql
+    ports:
+      - '127.0.0.1:3306:3306'
